@@ -122,3 +122,10 @@ ENV/
 */_version.py
 # Cookiecutter-CMS Test Artifacts
 /tests/CI_files
+
+# emacs
+*~
+
+# temporary data files
+*.in
+*.out

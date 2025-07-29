@@ -25,8 +25,8 @@ requires-python = ">=3.8"
 #]
 
 # Update the urls once the hosting is set up.
-#[project.urls]
-#"Source" = "https://github.com/<username>/molecool/"
+[project.urls]
+"Source" = "https://github.com/MolSSI-Education/molecool/"
 #"Documentation" = "https://molecool.readthedocs.io/"
 
 [project.optional-dependencies]

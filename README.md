@@ -13,6 +13,10 @@ This repository is currently under development. To do installation in developmen
 
 in the repository directory.
 
+This package requires the following:
+  - NumPy
+  - matplotlib
+
 ### Copyright
 
 Copyright (c) 2025, Jessica Nash

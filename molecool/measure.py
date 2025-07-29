@@ -5,7 +5,7 @@ This module is for functions that perform measurements.
 import numpy as np
 
 
-def calculate_distance(rA, rB):
+def calculate_distance(rA: np.ndarray, rB: np.ndarray) -> float:
     """Calculate the distance between two points.
 
     Parameters
@@ -32,7 +32,7 @@ def calculate_distance(rA, rB):
     return distance
 
 
-def calculate_angle(rA, rB, rC, degrees=False):
+def calculate_angle(rA: np.ndarray, rB: np.ndarray, rC: np.ndarray, degrees: bool = False) -> float:
     # Calculate the angle between three points. Answer is given in radians by default, but can be given in degrees
     # by setting degrees=True
     AB = rB - rA

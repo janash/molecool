@@ -27,3 +27,15 @@ def test_calculate_distance():
 def test_calculate_angle_many(p1, p2, p3, expected_angle):
     calculated_angle = molecool.calculate_angle(p1, p2, p3, degrees=True)
     assert expected_angle == pytest.approx(calculated_angle), f'{calculated_angle} {expected_angle}'
+
+def test_calculate_angle_radians():
+    """Test the calculate_angle function with output in radians"""
+
+    r1 = np.array([1, 0, 0])
+    r2 = np.array([0, 0, 0])
+    r3 = np.array([0, 1, 0])
+
+    expected_value = 90 * (np.pi / 180)
+
+    calculated_value = molecool.calculate_angle(r1, r2, r3)
+    assert expected_value == calculated_value

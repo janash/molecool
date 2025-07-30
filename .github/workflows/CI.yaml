@@ -12,13 +12,16 @@ on:
   pull_request:
     branches:
       - "main"
-  schedule:
-    # Weekly tests run on main by default:
-    #   Scheduled workflows run on the latest commit on the default or base branch.
-    #   (from https://help.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events-schedule)
-    - cron: "0 0 * * 0"
 
 jobs:
+  welcome:
+    name: Welcome the user with ASCII art
+    runs-on: ubuntu-latest
+    steps:
+     - uses: mscoutermarsh/ascii-art-action@master
+       with:
+          text: '${{ github.event_name }} from ${{ github.actor }}'
+
   test:
     name: Test on ${{ matrix.os }}, Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}

@@ -5,6 +5,9 @@
 
 Welcome to molecool's documentation!
 =========================================================
+molecool is a Python package designed to read in, perform analysis,
+and visualize molecular coordinates. The file formats `xyz` and `pdb` are
+currently supported.
 
 .. grid:: 1 1 2 2
 
@@ -72,4 +75,5 @@ Welcome to molecool's documentation!
    user_guide
    api
    developer_guide
+   about
 
